@@ -8,4 +8,9 @@ public class NotFoundException(string message) : JourneyException(message)
     {
         return HttpStatusCode.NotFound;
     }
+
+    public override IList<string> GetErrorMessages()
+    {
+        return [Message];
+    }
 }
