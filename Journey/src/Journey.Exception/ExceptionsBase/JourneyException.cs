@@ -1,6 +1,8 @@
 ﻿namespace Journey.Exception.ExceptionsBase;
 
-public class JourneyException
+public class JourneyException : SystemException
 {
-    
+    public JourneyException(string message) : base(message)
+    {
+    }
 }
